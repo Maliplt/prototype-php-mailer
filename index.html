@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Giriş Formu</title>
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="container">
+        <form action="login.php" method="POST" class="p-4 border rounded bg-light text-dark">
+            <div class="mb-3">
+                <label for="uname" class="form-label">Kullanıcı Adı</label>
+                <input type="text" class="form-control" id="uname" name="uname" placeholder="Kullanıcı Adı" required>
+            </div>
+            <div class="mb-3">
+                <label for="psw" class="form-label">Parola</label>
+                <input type="password" class="form-control" id="psw" name="psw" placeholder="Parola Giriniz" required>
+            </div>
+            <button type="submit" class="btn btn-primary" name="sbmt">Giriş Yap</button>
+        </form>
+    </div>
+</body>
+</html>

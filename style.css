@@ -1,0 +1,56 @@
+/* Bootstrap'in CSS dosyasını içe aktarıyoruz */
+@import url('css/bootstrap.min.css');
+
+/* Modal Backdrop Fix */
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+/* Modal Higher Z-Index */
+.modal {
+    z-index: 1050 !important;
+}
+
+/* Custom Styles for Tabs */
+.nav-tabs .nav-link.active {
+    background-color: var(--bs-body-bg);
+    border-color: var(--bs-body-bg) var(--bs-body-bg) var(--bs-body-color);
+    border-bottom: 3px solid #007bff;
+}
+
+body[data-bs-theme='dark'] .nav-tabs .nav-link.active {
+    background-color: #212529;
+    border-color: #212529 #212529 #495057;
+    border-bottom: 3px solid #007bff;
+}
+
+body[data-bs-theme='dark'] .btn-outline-dark {
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+body[data-bs-theme='dark'] .btn-outline-dark:hover {
+    background-color: #6c757d;
+    color: #f8f9fa;
+}
+
+body[data-bs-theme='dark'] .btn-light {
+    color: #212529;
+    border-color: #dee2e6;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Row Highlight */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+}
